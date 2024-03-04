@@ -139,3 +139,5 @@ class ProductManager {
 }
 
 let manager = new ProductManager();
+
+module.exports = ProductManager;
