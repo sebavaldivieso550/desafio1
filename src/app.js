@@ -30,9 +30,11 @@ app.get('/products', async (req, res) => {
 
 });
 
-app.get('/products/:pid',(req, res) => {
-    const { pid } = req.params;
-    const product = productManager.getProductById(parseInt(pid));
+app.get('/products/:pId',(req, res) => {
+    const pId = +req.params.pId;
+
+    const product = productManager.getProductById(pId);
+    
     if (product) {
         res.json(product);
     } else {
