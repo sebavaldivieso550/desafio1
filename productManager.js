@@ -12,18 +12,18 @@ class ProductManager {
         try {
             await this.loadProducts();
 
-            this.addProduct("Producto1", "Producto1-description", 15.50, "thumbnail-producto1", "001", 120);
+            /* this.addProduct("Producto1", "Producto1-description", 15.50, "thumbnail-producto1", "001", 120);
             this.addProduct("Producto2", "Producto2-description", 28.00, "thumbnail-producto2", "002", 75);
             this.addProduct("Producto3", "Producto3-description", 7.80, "thumbnail-producto3", "003", 185);
-            this.addProduct("Producto4", "Producto4-description", 89.80, "thumbnail-producto4", "003", 178);
+            this.addProduct("Producto4", "Producto4-description", 89.80, "thumbnail-producto4", "003", 178); */
 
-            console.log(this.getProducts());
+            /* console.log(this.getProducts());
             console.log(this.getProductById(2));
             console.log(this.getProductById(4));
 
             this.updateProduct(1, { price: 30.00, stock: 35 });
 
-            this.deleteProduct(3);
+            this.deleteProduct(3); */
 
         } catch (err) {
             console.log(err);

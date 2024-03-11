@@ -4,6 +4,10 @@ const ProductManager = require('../productManager');
 
 const app = express();
 
+app.listen(8080, () => {
+    console.log('Servidor corriendo en puerto 8080')
+})
+
 app.use(express.urlencoded({extended:true}));
 
 app.use(express.json());
